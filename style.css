@@ -1,0 +1,308 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 350px; 
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.sidebar .profile-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.sidebar .name {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #b3b1b1;
+}
+
+.sidebar .btn {
+  display: block;
+  color: #f4f4f4;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 2px solid #f4f4f4;
+  margin-bottom: 20px;
+}
+.sidebar .btn:hover {
+  background-color: #ffffff49;
+}
+
+.sidebar .social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sidebar .icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .icon:hover {
+  background-color: #555;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 1rem; 
+    color: #c8c8c8; 
+    font-size: 1.5rem; 
+}
+
+.social-links a:hover {
+    color: var(--dodger-blue); 
+}
+
+.content {
+  flex-grow: 1;
+  margin-left: 350px; 
+}
+.main-content {
+  padding: 0 50px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 50px 20px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 65px;
+    margin-top: 170px;
+    margin-bottom: 0;
+}
+
+.header p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+section {
+  margin: 50px 0;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.project-list {
+  padding: 1rem 5rem;
+}
+
+.project-box {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #f4f4f4;
+  margin-top: 2rem; 
+  padding: 3.5rem;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0.5rem; 
+}
+
+.project-link {
+  color: #f4f4f4;
+  text-decoration: none; 
+}
+
+.project-link:hover {
+  color: rgb(205, 205, 205);
+}
+
+.description {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1rem; 
+  color: #dadada;
+}
+.tools img {
+  height: 20px;
+  padding-right: 5px;
+}
+.tools {
+  margin-bottom: 20px;
+}
+.source-code {
+  align-items: center;
+}
+.project-box .btn {
+  font-size: 13px;
+  text-align: center;
+  margin: 0 18rem;
+  padding: 0.5rem 0;
+  display: block;
+  color: #f4f4f4;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 2px solid #b3b1b1;
+}
+.project-box .btn:hover {
+  background-color: #ffffff5c;
+}
+
+.footer {
+  height: 45px;
+  background-color: #494949;
+}
+.footer p {
+  padding-top: 18px;
+  font-size: 15px;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: flex-start; 
+  }
+  .sidebar .profile-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar .name {
+    text-align: center;
+  }
+  .sidebar .btn {
+    margin: 0 70px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+  .header-background {
+    height: 300px;
+  }
+  .header h1 {
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  .header p {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center;
+  }
+  section {
+    margin: 20px 0;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+
+  .sidebar .social-icons {
+    justify-content: center;
+  }
+
+  .sidebar .icon {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .sidebar .btn {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .content section {
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .main-content {
+    padding: 0;
+  }
+  .project-list {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .project-box .btn {
+    margin: 0;
+  }
+}
+ 
+
+
+
+
